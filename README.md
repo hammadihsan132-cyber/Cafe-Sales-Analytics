@@ -46,19 +46,19 @@ Key outputs include printed summaries (e.g., total revenue, top items) and visua
 
 **Key Sections:**
 
-Data Loading and Inspection: Loads CSV, checks shape, info, description, and missing values.
-Data Type Conversion: Converts Quantity, Price Per Unit, Total Spent to numeric; Transaction Date to datetime.
-Handling Missing Values: Fills non-critical missing values (e.g., Payment Method, Location) with "Not Specified"; drops rows missing Quantity or Price Per Unit.
-Data Cleaning: Calculates accurate Revenue (Quantity * Price Per Unit), removes duplicates.
-Feature Engineering: Extracts Year, Month, Day, and Day_Name from Transaction Date.
-Analysis and Insights:
-Total revenue.
-Top-selling items (by quantity and revenue).
-Average transaction value.
-Sales distribution by location and payment method.
-Monthly sales trend (line plot).
-Daily sales trend (bar plot).
-Busiest day of the week (e.g., Monday identified as busiest).
+**Data Loading and Inspection:** Loads CSV, checks shape, info, description, and missing values.
+**Data Type Conversion:** Converts Quantity, Price Per Unit, Total Spent to numeric; Transaction Date to datetime.
+**Handling Missing Values:** Fills non-critical missing values (e.g., Payment Method, Location) with "Not Specified"; drops rows missing **Quantity or Price Per Unit.**
+**Data Cleaning:** Calculates accurate Revenue (Quantity * Price Per Unit), removes duplicates.
+**Feature Engineering:** Extracts Year, Month, Day, and Day_Name from Transaction Date.
+**Analysis and Insights:**
+**Total revenue.**
+**Top-selling items (by quantity and revenue).**
+**Average transaction value.**
+**Sales distribution by location and payment method.**
+**Monthly sales trend (line plot).**
+**Daily sales trend (bar plot).**
+**Busiest day of the week** (e.g., Monday identified as busiest).
 
 **Export:** 
 
