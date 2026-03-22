@@ -1,10 +1,11 @@
 **Cafe Sales Analytics Notebook README**
 
-
 **Overview**
+
 This Jupyter Notebook (Cafe_Sales_Analytics.ipynb) performs data cleaning, transformation, and exploratory data analysis (EDA) on a cafe sales dataset. The dataset starts as a "dirty" CSV file (dirty_cafe_sales.csv) containing inconsistencies, missing values, and incorrect data types. The notebook cleans the data, calculates key metrics like revenue, and generates insights such as total sales, top-selling items, trends over time, and busiest days. Finally, it exports a cleaned version of the dataset (clean_cafe_sales.csv).
 
 **The analysis focuses on:**
+
 Sales revenue and transaction patterns.
 Item performance (e.g., top sellers by quantity and revenue).
 Trends by month, day, location, and payment method.
@@ -14,13 +15,16 @@ This notebook is useful for data analysts or cafe owners looking to derive actio
 Requirements
 
 **Python Version: Python 3.x (tested on 3.12.3 in Google Colab).**
+
 **Libraries:**
+
 pandas (for data manipulation).
 numpy (for numerical operations).
 matplotlib (for plotting).
 seaborn (for enhanced visualizations).
 
 **Environment:** 
+
 The notebook is designed for Google Colab but can run in any Jupyter environment. No additional installations are needed in Colab as the libraries are pre-installed.
 Input Data: dirty_cafe_sales.csv (a CSV file with cafe sales records, including columns like Transaction ID, Item, Quantity, Price Per Unit, etc.).
 
