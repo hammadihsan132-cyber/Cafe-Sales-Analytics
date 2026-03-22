@@ -46,18 +46,86 @@ Key outputs include printed summaries (e.g., total revenue, top items) and visua
 
 **Key Sections:**
 
-**Data Loading and Inspection:** Loads CSV, checks shape, info, description, and missing values.
-**Data Type Conversion:** Converts Quantity, Price Per Unit, Total Spent to numeric; Transaction Date to datetime.
-**Handling Missing Values:** Fills non-critical missing values (e.g., Payment Method, Location) with "Not Specified"; drops rows missing **Quantity or Price Per Unit.**
-**Data Cleaning:** Calculates accurate Revenue (Quantity * Price Per Unit), removes duplicates.
-**Feature Engineering:** Extracts Year, Month, Day, and Day_Name from Transaction Date.
-**Analysis and Insights:**
-**Total revenue.**
+**Data Loading and Inspection:** 
+
+Loads CSV, checks shape, info, description, and missing values.
+
+**Data Type Conversion:**
+
+Converts Quantity, Price Per Unit, Total Spent to numeric; Transaction Date to datetime.
+
+**Handling Missing Values:** 
+
+Fills non-critical missing values (e.g., Payment Method, Location) with "Not Specified"; drops rows missing 
+
+**Quantity or Price Per Unit.**
+Item	Price   Per Unit
+0	    Cake	     3.0
+1	    Coffee	  2.0
+2	    Cookie	  1.0
+3	    ERROR  	  1.5
+4	    Juice	    3.0
+5	    Salad	    5.0
+6	    Sandwich	4.0
+7	    Smoothie	4.0
+8	    Tea	      1.5
+9	    UNKNOWN	  3.0
+10	   Unknown	3.0
+
+**Data Cleaning:**
+
+Calculates accurate Revenue (Quantity * Price Per Unit), removes duplicates.
+
+**Feature Engineering:**
+
+Extracts Year, Month, Day, and Day_Name from Transaction Date.
+
+**Analysis and Insights:** 
+From the analysis we get insights that which item sell more and what are the busy days in week and form wich product e get more revenew and which product have less sale so all these insights are very useful for business.
+
+**Total revenue.  $80478.5**
+
 **Top-selling items (by quantity and revenue).**
-**Average transaction value.**
-**Sales distribution by location and payment method.**
+	     
+**Item**	     **Revenue**
+Salad	    15600.0
+Sandwich	12296.0
+Smoothie	12132.0
+Juice	    9561.0
+Cake	    9540.0
+Coffee	  6424.0
+Tea	      4431.0
+Cookie	  2898.0
+Unknown	  2651.0
+UNKNOWN	  2550.0
+ERROR	    2395.5
+
+
+**Revenue distribution by location and payment method.** 
+<img width="587" height="515" alt="image" src="https://github.com/user-attachments/assets/1b8f7d7c-6ed1-4136-8811-1824308e31c1" />
+
+**REVENUE BY LOCATION**
+
+**Location**	     **Revenue**
+Not Specified	  26606.5
+In-store	      24598.0
+Takeaway	      23868.0
+ERROR	          2906.0
+UNKNOWN	        2500.0
+
+**REVENUE BY PAYMENT MEMTHOD**
+
+**Payment**        **Method**	
+Not Specified	  2310
+Digital Wallet	2068
+Credit Card	    2047
+Cash	          2044
+ERROR          	271
+UNKNOWN        	266
+
+
 **Monthly sales trend (line plot).**
-**Daily sales trend (bar plot).**
+
 **Busiest day of the week** (e.g., Monday identified as busiest).
 
 **Export:** 
