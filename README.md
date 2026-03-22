@@ -29,19 +29,23 @@ The notebook is designed for Google Colab but can run in any Jupyter environment
 Input Data: dirty_cafe_sales.csv (a CSV file with cafe sales records, including columns like Transaction ID, Item, Quantity, Price Per Unit, etc.).
 
 **If running locally, install dependencies via:**
+
 textpip install pandas numpy matplotlib seaborn
 Usage
 
 **Setup:**
+
 Place dirty_cafe_sales.csv in the working directory (e.g., /content/ in Colab).
 Open the notebook in Jupyter or Google Colab.
 
 **Run the Notebook:**
+
 Execute cells sequentially.
 The notebook loads the data, cleans it, performs analysis, generates plots, and exports the cleaned CSV.
 Key outputs include printed summaries (e.g., total revenue, top items) and visualizations (plots saved as PNG files).
 
 **Key Sections:**
+
 Data Loading and Inspection: Loads CSV, checks shape, info, description, and missing values.
 Data Type Conversion: Converts Quantity, Price Per Unit, Total Spent to numeric; Transaction Date to datetime.
 Handling Missing Values: Fills non-critical missing values (e.g., Payment Method, Location) with "Not Specified"; drops rows missing Quantity or Price Per Unit.
@@ -57,10 +61,12 @@ Daily sales trend (bar plot).
 Busiest day of the week (e.g., Monday identified as busiest).
 
 **Export:** 
+
 Saves cleaned data to clean_cafe_sales.csv and prompts download (in Colab).
 Reload and Verify: Loads the cleaned CSV for final info and description checks.
 
 **Outputs:**
+
 Cleaned CSV: clean_cafe_sales.csv (contains 9006 rows after cleaning, with added columns like Revenue, Year, Month, Day, Day_Name).
 Visualizations:
 Monthly Sales Trend (line plot, saved as monthly_sales_trend.png).
@@ -82,6 +88,7 @@ Columns: 13 (original + Revenue, Year, Month, Day, Day_Name).
 All critical columns are numeric/datetime; missing non-critical values filled.
 
 **Key Statistics from Cleaned Data:**
+
 Total Revenue: 80,478.
 Average Quantity per Transaction: ~3.02.
 Average Price Per Unit: ~2.95.
