@@ -1,5 +1,5 @@
-Cafe Sales Analytics Notebook README
-Overview
+##Cafe Sales Analytics Notebook README
+##Overview
 This Jupyter Notebook (Cafe_Sales_Analytics.ipynb) performs data cleaning, transformation, and exploratory data analysis (EDA) on a cafe sales dataset. The dataset starts as a "dirty" CSV file (dirty_cafe_sales.csv) containing inconsistencies, missing values, and incorrect data types. The notebook cleans the data, calculates key metrics like revenue, and generates insights such as total sales, top-selling items, trends over time, and busiest days. Finally, it exports a cleaned version of the dataset (clean_cafe_sales.csv).
 The analysis focuses on:
 
