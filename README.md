@@ -77,23 +77,35 @@ Printed Results: Summaries like total revenue (~80,478), top items (e.g., Coffee
 
 **Data Description**
 
-Input File: dirty_cafe_sales.csv
-Rows: 10,000 (original, before cleaning).
-Columns: 8 (Transaction ID, Item, Quantity, Price Per Unit, Total Spent, Payment Method, Location, Transaction Date).
+**Input File: dirty_cafe_sales.csv**
+
+**Rows:** 10,000 (original, before cleaning).
+
+**Columns:** 8 (Transaction ID, Item,Quantity, Price Per Unit, Total Spent, Payment Method, Location, Transaction Date).
 Issues: Missing values, incorrect data types (e.g., strings instead of numerics), inconsistent totals, duplicates.
 
-Cleaned File: clean_cafe_sales.csv
-Rows: 9,006 (after dropping invalid rows and duplicates).
-Columns: 13 (original + Revenue, Year, Month, Day, Day_Name).
+**Cleaned File: clean_cafe_sales.csv**
+
+**Rows:** 9,006 (after dropping invalid rows and duplicates).
+
+**Columns:** 13 (original + Revenue, Year, Month, Day, Day_Name).
+
 All critical columns are numeric/datetime; missing non-critical values filled.
 
 **Key Statistics from Cleaned Data:**
 
 Total Revenue: 80,478.
+
 Average Quantity per Transaction: ~3.02.
+
 Average Price Per Unit: ~2.95.
+
 Average Total Spent (Revenue): ~8.94.
+
 Data covers the year 2023 only.
+
 Top Item by Quantity: Cookie (total quantity: 5,496).
+
 Top Item by Revenue: Salad (revenue: 15,025).
+
 Busiest Day: Monday (1,328 transactions).
